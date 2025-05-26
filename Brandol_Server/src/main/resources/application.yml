@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASS}
+  jpa :
+    hibernate:
+      ddl-auto : update
+    properties:
+      hibernate :
+        #show_sql : true #??? ??? ??
+        format_sql : true #???
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  profiles:
+    active: aws
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.type : trace
+jwt:
+  secret: ${JWT_SECRET}
+defaultItemIds:
+  male: ${DEFAULT_ITEM_MALE}
+  female: ${DEFAULT_ITEM_FEMALE}
