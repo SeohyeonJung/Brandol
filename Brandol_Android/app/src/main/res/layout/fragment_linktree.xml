@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linktree_topbar_cl"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingBottom="11dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/linktree_back_btn"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_back"
+            android:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/linktree_brandname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="브랜드 링크트리"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/linktree_homepage_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="홈페이지"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_topbar_cl" />
+
+    <TextView
+        android:id="@+id/linktree_homepage_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text=""
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="11dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/border_05dp_round5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_homepage_tv" />
+
+    <TextView
+        android:id="@+id/linktree_download_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="다운로드"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_homepage_btn" />
+
+    <TextView
+        android:id="@+id/linktree_download_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text=""
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="11dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/border_05dp_round5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_download_tv" />
+
+    <TextView
+        android:id="@+id/linktree_sns_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="브랜드 SNS"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_download_btn" />
+
+    <TextView
+        android:id="@+id/linktree_sns1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text=""
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="11dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/border_05dp_round5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_sns_tv" />
+
+    <TextView
+        android:id="@+id/linktree_sns2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text=""
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="11dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/border_05dp_round5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_sns1_btn" />
+
+    <TextView
+        android:id="@+id/linktree_sns3_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text=""
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="11dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/border_05dp_round5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_sns2_btn" />
+
+    <TextView
+        android:id="@+id/linktree_store_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="스토어"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_sns3_btn" />
+
+    <TextView
+        android:id="@+id/linktree_store_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text=""
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="11dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/border_05dp_round5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linktree_store_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

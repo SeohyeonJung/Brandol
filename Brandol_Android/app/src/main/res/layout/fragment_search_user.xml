@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/user_box1_iv"
+                android:layout_width="130dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_box"
+                app:layout_constraintTop_toBottomOf="@id/user_catagory_tv"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/user_char1_iv"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/img_user_character_5"/>
+
+            <TextView
+                android:id="@+id/user_char1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_marginStart="50dp"
+                android:text="서혀닝"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/user_box2_iv"
+                android:layout_width="130dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_box"
+                app:layout_constraintTop_toBottomOf="@id/user_catagory_tv"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/user_char2_iv"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/img_user_character_3"/>
+
+            <TextView
+                android:id="@+id/user_char2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_marginStart="50dp"
+                android:text="vcc"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/user_box3_iv"
+                android:layout_width="130dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img_box"
+                app:layout_constraintTop_toBottomOf="@id/user_catagory_tv"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/user_char3_iv"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/img_user_char"/>
+
+            <TextView
+                android:id="@+id/user_char3_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_marginStart="50dp"
+                android:text="이호진"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</ScrollView>

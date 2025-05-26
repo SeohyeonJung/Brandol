@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container">
+
+    <ImageView
+        android:id="@+id/brandinfo_brandinfo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="219dp"
+        android:background="#dddddd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/brandinfo_back_btn"
+        android:layout_width="27.23dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/brandinfo_link_btn"
+        android:layout_width="21.01dp"
+        android:layout_height="21.01dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8.99dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/brandinfo_brand_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/brandinfo_brandinfo_iv"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/brandinfo_brandlogo_iv"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:background="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/brandinfo_fancnt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:text="FAN : "
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/brandinfo_brand_cv"
+        app:layout_constraintTop_toTopOf="@+id/brandinfo_brand_cv" />
+
+    <TextView
+        android:id="@+id/brandinfo_fancntnum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/brandinfo_fancnt_tv"
+        app:layout_constraintTop_toTopOf="@+id/brandinfo_brand_cv" />
+
+    <TextView
+        android:id="@+id/brandinfo_brandintro_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="4dp"
+        android:text="한 줄 소개, 카피"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/brandinfo_brand_cv"
+        app:layout_constraintTop_toBottomOf="@+id/brandinfo_fancnt_tv" />
+
+    <TextView
+        android:id="@+id/brandinfo_brandname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="6dp"
+        android:text="브랜드 명"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/brandinfo_brand_cv"
+        app:layout_constraintTop_toBottomOf="@+id/brandinfo_brandintro_tv" />
+
+    <LinearLayout
+        android:id="@+id/brandinfo_addlist_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/btn_brandlist_plus"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandinfo_brandinfo_iv">
+
+        <TextView
+            android:id="@+id/brandinfo_addlist_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="10dp"
+            android:text="브랜드 리스트 추가하기"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/brandinfo_categorynav_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brandinfo_addlist_btn"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/selectedpurple"
+        app:tabIndicatorHeight="5dp"
+        app:tabSelectedTextColor="@color/selectedpurple"
+        app:tabTextColor="@color/black" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/brandinfo_category_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="328dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brandinfo_categorynav_tl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
